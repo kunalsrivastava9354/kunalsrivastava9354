@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120" role="img" aria-label="Kunal — Sometimes you gotta run before you can walk.">
+<defs><linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#B3202A"/><stop offset="1" stop-color="#E0B04A"/></linearGradient></defs>
+<rect width="900" height="120" rx="16" fill="#14100F"/><rect y="114" width="900" height="6" fill="url(#b)"/>
+<text x="450" y="58" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#F5EDE3">Kunal Srivastava</text>
+<text x="450" y="90" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" font-style="italic" fill="#E0B04A">Sometimes you gotta run before you can walk.</text>
+</svg>

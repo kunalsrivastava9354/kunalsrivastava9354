@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" role="img" aria-label="Kunal Srivastava — Cyber Security Engineer, Python Developer and Frontend Enthusiast. Sometimes you gotta run before you can walk.">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A1412"/><stop offset="1" stop-color="#14100F"/></linearGradient>
+<linearGradient id="b" x1="0" x2="1"><stop offset="0" stop-color="#B3202A"/><stop offset="1" stop-color="#E0B04A"/></linearGradient></defs>
+<rect width="900" height="280" rx="18" fill="url(#g)"/>
+<rect x="0" y="0" width="900" height="6" rx="3" fill="url(#b)"/>
+<text x="50" y="70" font-family="'Consolas','Courier New',monospace" font-size="15" fill="#E0B04A" letter-spacing="3">&gt; HELLO, WORLD. I'M</text>
+<text x="50" y="140" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="62" font-weight="700" fill="#F5EDE3">Kunal Srivastava</text>
+<text x="50" y="185" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" fill="#E0B04A">Cyber Security Engineer · Python Developer · Frontend Enthusiast</text>
+<text x="50" y="235" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="20" font-style="italic" fill="#A89C92">“Sometimes you gotta run before you can walk.”</text>
+<rect x="50" y="205" width="120" height="3" rx="1.5" fill="url(#b)"/>
+</svg>
