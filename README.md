@@ -27,7 +27,7 @@ I'm a B.Tech Cyber Security student at **Gurugram University** who likes breakin
 
 An AI-powered **urban heat island** intelligence and mitigation platform, built with my team for the **Bharatiya Antariksh Hackathon 2026 (BAH 2026)**. It turns satellite-derived data (LST, NDVI, NDBI, albedo, humidity and more) into a **Random Forest** model that predicts land surface temperature, detects heat hotspots, simulates cooling fixes like tree plantation and cool roofs, and generates climate insights with **Gemini AI**, all on an interactive GIS dashboard. My part: AI/ML development, backend engineering and geospatial analytics.
 
-<img src="assets/geothermx.svg" width="100%" alt="GeoThermX: hotspots detected, cooling simulated, AI pipeline to dashboard"/>
+<img src="assets/ids-scan.svg" width="100%" alt="GeoThermX: hotspots detected, cooling simulated, AI pipeline to dashboard"/>
 
 | Project | What it does | Stack |
 |---|---|---|
