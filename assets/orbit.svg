@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" role="img" aria-label="Orbit of skills around Kunal" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060a14"/>
+      <stop offset="1" stop-color="#0d1530"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#00a3b8"/>
+    </radialGradient>
+    <clipPath id="rc"><rect width="900" height="440" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Courier New',Consolas,monospace}
+    .pt{font:700 12px 'Courier New',Consolas,monospace;fill:#e2e8f0}
+    .p1{fill:#1a0f1e;stroke:#f43f5e;stroke-width:1.5}
+    .p2{fill:#07202a;stroke:#00f5ff;stroke-width:1.5}
+    .p3{fill:#1a1536;stroke:#a78bfa;stroke-width:1.5}
+    .tw{animation:tw 3s ease-in-out infinite}
+    @keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+  </style>
+
+  <g clip-path="url(#rc)">
+    <rect width="900" height="440" fill="url(#bg)"/>
+
+    <!-- stars -->
+    <g fill="#fff">
+      <circle class="tw" cx="60" cy="50" r="1.5"/>
+      <circle class="tw" cx="140" cy="380" r="1.2" style="animation-delay:-1s"/>
+      <circle class="tw" cx="260" cy="30" r="1.4" style="animation-delay:-2s"/>
+      <circle class="tw" cx="330" cy="410" r="1.2" style="animation-delay:-.5s"/>
+      <circle class="tw" cx="640" cy="28" r="1.5" style="animation-delay:-1.5s"/>
+      <circle class="tw" cx="780" cy="400" r="1.3" style="animation-delay:-2.5s"/>
+      <circle class="tw" cx="850" cy="80" r="1.4" style="animation-delay:-.8s"/>
+      <circle class="tw" cx="80" cy="230" r="1.1" style="animation-delay:-1.8s"/>
+    </g>
+
+    <!-- orbit rings -->
+    <g fill="none" stroke-width="1.2" stroke-dasharray="4 7">
+      <circle cx="450" cy="220" r="80"  stroke="#f43f5e" stroke-opacity=".5">
+        <animate attributeName="stroke-dashoffset" from="0" to="-110" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="450" cy="220" r="150" stroke="#00f5ff" stroke-opacity=".45">
+        <animate attributeName="stroke-dashoffset" from="0" to="110" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="450" cy="220" r="195" stroke="#a78bfa" stroke-opacity=".45">
+        <animate attributeName="stroke-dashoffset" from="0" to="-110" dur="16s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- core -->
+    <circle cx="450" cy="220" r="52" fill="#8b5cf6" opacity=".15">
+      <animate attributeName="r" values="46;60;46" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="220" r="38" fill="url(#core)"/>
+    <text x="450" y="219" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-weight="800" font-size="15" fill="#fff">KUNAL</text>
+    <text x="450" y="235" text-anchor="middle" class="mono" font-size="9" fill="#e2e8f0">SEC + DEV</text>
+
+    <!-- RING 1: security (r=80) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 450 220" to="360 450 220" dur="16s" repeatCount="indefinite"/>
+      <g transform="translate(530 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="16s" repeatCount="indefinite"/>
+        <rect x="-52" y="-12" width="104" height="24" rx="12" class="p1"/><text class="pt" y="4" text-anchor="middle">Cryptography</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="120 450 220" to="480 450 220" dur="16s" repeatCount="indefinite"/>
+      <g transform="translate(530 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-120 0 0" to="-480 0 0" dur="16s" repeatCount="indefinite"/>
+        <rect x="-35" y="-12" width="70" height="24" rx="12" class="p1"/><text class="pt" y="4" text-anchor="middle">Hashing</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="240 450 220" to="600 450 220" dur="16s" repeatCount="indefinite"/>
+      <g transform="translate(530 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-240 0 0" to="-600 0 0" dur="16s" repeatCount="indefinite"/>
+        <rect x="-35" y="-12" width="70" height="24" rx="12" class="p1"/><text class="pt" y="4" text-anchor="middle">Malware</text>
+      </g></g>
+    </g>
+
+    <!-- RING 2: languages (r=150, reverse) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 450 220" to="-360 450 220" dur="26s" repeatCount="indefinite"/>
+      <g transform="translate(600 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="26s" repeatCount="indefinite"/>
+        <rect x="-33" y="-12" width="66" height="24" rx="12" class="p2"/><text class="pt" y="4" text-anchor="middle">Python</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="90 450 220" to="-270 450 220" dur="26s" repeatCount="indefinite"/>
+      <g transform="translate(600 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-90 0 0" to="270 0 0" dur="26s" repeatCount="indefinite"/>
+        <rect x="-28" y="-12" width="56" height="24" rx="12" class="p2"/><text class="pt" y="4" text-anchor="middle">Java</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="180 450 220" to="-180 450 220" dur="26s" repeatCount="indefinite"/>
+      <g transform="translate(600 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-180 0 0" to="180 0 0" dur="26s" repeatCount="indefinite"/>
+        <rect x="-20" y="-12" width="40" height="24" rx="12" class="p2"/><text class="pt" y="4" text-anchor="middle">C</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="270 450 220" to="-90 450 220" dur="26s" repeatCount="indefinite"/>
+      <g transform="translate(600 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-270 0 0" to="90 0 0" dur="26s" repeatCount="indefinite"/>
+        <rect x="-24" y="-12" width="48" height="24" rx="12" class="p2"/><text class="pt" y="4" text-anchor="middle">SQL</text>
+      </g></g>
+    </g>
+
+    <!-- RING 3: web + tools (r=195) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="45 450 220" to="405 450 220" dur="40s" repeatCount="indefinite"/>
+      <g transform="translate(645 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-45 0 0" to="-405 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect x="-29" y="-12" width="58" height="24" rx="12" class="p3"/><text class="pt" y="4" text-anchor="middle">HTML</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="135 450 220" to="495 450 220" dur="40s" repeatCount="indefinite"/>
+      <g transform="translate(645 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-135 0 0" to="-495 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect x="-24" y="-12" width="48" height="24" rx="12" class="p3"/><text class="pt" y="4" text-anchor="middle">CSS</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="225 450 220" to="585 450 220" dur="40s" repeatCount="indefinite"/>
+      <g transform="translate(645 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-225 0 0" to="-585 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect x="-22" y="-12" width="44" height="24" rx="12" class="p3"/><text class="pt" y="4" text-anchor="middle">Git</text>
+      </g></g>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="315 450 220" to="675 450 220" dur="40s" repeatCount="indefinite"/>
+      <g transform="translate(645 220)"><g>
+        <animateTransform attributeName="transform" type="rotate" from="-315 0 0" to="-675 0 0" dur="40s" repeatCount="indefinite"/>
+        <rect x="-33" y="-12" width="66" height="24" rx="12" class="p3"/><text class="pt" y="4" text-anchor="middle">GitHub</text>
+      </g></g>
+    </g>
+
+    <!-- legend -->
+    <g class="mono" font-size="12">
+      <circle cx="40" cy="36" r="5" fill="#f43f5e"/><text x="54" y="40" fill="#cbd5e1">inner  · security</text>
+      <circle cx="40" cy="60" r="5" fill="#00f5ff"/><text x="54" y="64" fill="#cbd5e1">middle · languages</text>
+      <circle cx="40" cy="84" r="5" fill="#a78bfa"/><text x="54" y="88" fill="#cbd5e1">outer  · web &amp; tools</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="899" height="439" rx="18" fill="none" stroke="#1e2a4d"/>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYToyNmMwNzg3ZC1iMWU1LTRkNTktYjFjMC0zMGMxYmYwOWY1OGEAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaJYJF4wl6+SXGbcBZzhDeesAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo3ZGU0YjY3NS00NDFmLTQzMGQtOTE1Ni0zYjRmOTIzMmRlZDZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNolWI1Zu682xotnCivoSJGNQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggLgFFrzXq92Iy+eJ4/3/knPFoT671RAGMpawkErmG/cukZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKZgDsjEcc65KFKKZf+sAPkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYID1/tiEKnD+cCTwrFqKkQCWHvMp4KJd0UFAvvzp5ywqFZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSJ8Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjI2YzA3ODdkLWIxZTUtNGQ1OS1iMWMwLTMwYzFiZjA5ZjU4YS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjNjNDVkMmNlLTQzM2EtNGMxYS1hZGFjLWE4M2I3NzBhZGIyNXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAuAUWvNer3YjL54nj/f+Sc8WhPrvVEAYylrCQSuYb9y6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggpmLXwoL+0nc4Q58QW0mJw2EQ4nmMRPomQV0IqF51mqCiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggPQ5ZydqH6lMA94jlharuDtRlqCWXh6AjVLp0kVZUGzZ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJOyPmAPgHWjPHRsH7TyLS86XV1hx+jDQkeVTm3QjVEObZCJ9OG8RzYPiLIfXgmKvOPqUCPWfW8YS51vbo/xBK8=</c2pa:manifest></metadata></svg>
