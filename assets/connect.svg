@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-label="Let's connect: terminal typing contact details next to a network of contact links" xmlns:c2pa="http://c2pa.org/manifest">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060a14"/>
+      <stop offset="1" stop-color="#101936"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#00a3b8"/>
+    </radialGradient>
+    <clipPath id="rc"><rect width="900" height="270" rx="18"/></clipPath>
+    <clipPath id="c1"><rect x="56" y="82"  width="0" height="26"><animate attributeName="width" values="0;0;230;230;0" keyTimes="0;.03;.15;.92;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c2"><rect x="56" y="110" width="0" height="26"><animate attributeName="width" values="0;0;350;350;0" keyTimes="0;.18;.34;.92;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c3"><rect x="56" y="138" width="0" height="26"><animate attributeName="width" values="0;0;290;290;0" keyTimes="0;.38;.5;.92;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c4"><rect x="56" y="166" width="0" height="26"><animate attributeName="width" values="0;0;170;170;0" keyTimes="0;.54;.62;.92;1" dur="12s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+  <style>
+    .mono{font-family:'Courier New',Consolas,monospace}
+    .tl{font:14px 'Courier New',Consolas,monospace}
+    .nl{font:700 10px 'Courier New',Consolas,monospace;fill:#94a3b8}
+    .nt{font:800 14px 'Segoe UI',Arial,sans-serif;fill:#fff}
+    .blink{animation:blink 1s steps(2,start) infinite}
+    @keyframes blink{to{opacity:0}}
+  </style>
+
+  <g clip-path="url(#rc)">
+    <rect width="900" height="270" fill="url(#bg)"/>
+
+    <!-- ===== terminal ===== -->
+    <rect x="40" y="30" width="470" height="190" rx="12" fill="#0b1226" stroke="#1e2a4d"/>
+    <path d="M40 42a12 12 0 0 1 12-12h446a12 12 0 0 1 12 12v18H40Z" fill="#111b38"/>
+    <circle cx="62" cy="45" r="5" fill="#f43f5e"/>
+    <circle cx="80" cy="45" r="5" fill="#fbbf24"/>
+    <circle cx="98" cy="45" r="5" fill="#34d399"/>
+    <text x="275" y="49" text-anchor="middle" class="mono" font-size="11" fill="#64748b">kunal@connect: ~</text>
+
+    <g clip-path="url(#c1)"><text x="56" y="101" class="tl" fill="#34d399">$ ./connect --with kunal</text></g>
+    <g clip-path="url(#c2)"><text x="56" y="129" class="tl" fill="#00f5ff">&gt; email: srivastavakunal9354@gmail.com</text></g>
+    <g clip-path="url(#c3)"><text x="56" y="157" class="tl" fill="#e2e8f0">&gt; open to: frontend / web roles</text></g>
+    <g clip-path="url(#c4)"><text x="56" y="185" class="tl" fill="#a78bfa">&gt; status: online</text></g>
+    <rect class="blink" x="56" y="199" width="10" height="3" fill="#00f5ff"/>
+
+    <!-- ===== network ===== -->
+    <!-- pulse rings -->
+    <circle cx="710" cy="130" r="30" fill="none" stroke="#00f5ff" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="30;110" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".7;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="130" r="30" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="30;110" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".7;0" dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="130" r="30" fill="none" stroke="#00f5ff" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="30;110" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".7;0" dur="3.6s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- links (dashes flow toward the centre) -->
+    <g stroke-width="2" stroke-dasharray="5 6" fill="none">
+      <line x1="620" y1="72"  x2="710" y2="130" stroke="#0A66C2"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1.2s" repeatCount="indefinite"/></line>
+      <line x1="800" y1="72"  x2="710" y2="130" stroke="#e2e8f0"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1.2s" repeatCount="indefinite"/></line>
+      <line x1="620" y1="188" x2="710" y2="130" stroke="#FFA116"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1.2s" repeatCount="indefinite"/></line>
+      <line x1="800" y1="188" x2="710" y2="130" stroke="#D14836"><animate attributeName="stroke-dashoffset" from="0" to="-22" dur="1.2s" repeatCount="indefinite"/></line>
+    </g>
+
+    <!-- packets travelling to the centre -->
+    <circle r="4" fill="#60a5fa" opacity="0"><animateMotion path="M620 72 L710 130" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle r="4" fill="#e2e8f0" opacity="0"><animateMotion path="M800 72 L710 130" dur="2.4s" begin=".6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" begin=".6s" repeatCount="indefinite"/></circle>
+    <circle r="4" fill="#FFA116" opacity="0"><animateMotion path="M620 188 L710 130" dur="2.4s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle r="4" fill="#f87171" opacity="0"><animateMotion path="M800 188 L710 130" dur="2.4s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="2.4s" begin="1.8s" repeatCount="indefinite"/></circle>
+
+    <!-- centre -->
+    <circle cx="710" cy="130" r="32" fill="url(#core)"/>
+    <text x="710" y="135" text-anchor="middle" class="nt">KUNAL</text>
+
+    <!-- nodes (gentle float) -->
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="3s" repeatCount="indefinite"/>
+      <circle cx="620" cy="72" r="22" fill="#0A66C2"/>
+      <text x="620" y="78" text-anchor="middle" class="nt">in</text>
+      <text x="620" y="34" text-anchor="middle" class="nl">LinkedIn</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 -4;0 0;0 -4" dur="3.4s" repeatCount="indefinite"/>
+      <circle cx="800" cy="72" r="22" fill="#1f2937" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="800" y="77" text-anchor="middle" class="nt">GH</text>
+      <text x="800" y="34" text-anchor="middle" class="nl">GitHub</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 4;0 0" dur="3.2s" repeatCount="indefinite"/>
+      <circle cx="620" cy="188" r="22" fill="#FFA116"/>
+      <text x="620" y="194" text-anchor="middle" class="nt" style="fill:#111827">LC</text>
+      <text x="620" y="232" text-anchor="middle" class="nl">LeetCode</text>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 4;0 0;0 4" dur="3.6s" repeatCount="indefinite"/>
+      <circle cx="800" cy="188" r="22" fill="#D14836"/>
+      <text x="800" y="194" text-anchor="middle" class="nt">@</text>
+      <text x="800" y="232" text-anchor="middle" class="nl">Email</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="899" height="269" rx="18" fill="none" stroke="#1e2a4d"/>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0YjczODlkYy04ZTY1LTRlMDktYmU2ZC04MGJlMWJmYjMwYTYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaAV0rdkObXwsdRiv3xfPnTcAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDoxZDJlN2QxOS0xODY2LTQyODItYjBjZC04ZmU0N2NhOGZjYzhscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNorkVMV11vWwCWr5XHM6tiEQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggGsrBJasX66FQ7ZWP0dRoTS3RNEC8o9u9U/FjdhmWCnCkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaO+r+mjX3zK9gm+xPkB/apMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYID7IR3jQK7kfMCbrjsqCa/BLnSxn+nK1GDFVSkENhFauZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GR1AZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjRiNzM4OWRjLThlNjUtNGUwOS1iZTZkLTgwYmUxYmZiMzBhNi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjgxY2VmMTEyLTVlZTMtNDhiMC1hOTU1LWI5ZTQ4MDQ2YmFhNXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAaysElqxfroVDtlY/R1GhNLdE0QLyj271T8WN2GZYKcKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg6YkcOXrStlZxHyP+qLGCO7Dd8glUt1h6Y+qzJ+Lmwo6iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggJ9mbmQs0QJYd454CD0yRXsQUZ89PREovC2A4OtdBRg10Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNRlvTqfEylMpfnRk87O0QxPCawSBf8irjRo2QvL5OJfxZX3j+C/S2RXkX+g/9a0jb+HW5azLzC5Ju7Om6ABd3E=</c2pa:manifest></metadata></svg>
