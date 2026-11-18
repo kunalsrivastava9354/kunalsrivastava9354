@@ -23,18 +23,18 @@ I'm a B.Tech Cyber Security student at **Gurugram University** who likes breakin
 
 <img src="assets/timeline.svg" width="100%" alt="Timeline from B.Tech start to graduation"/>
 
-### 🛡️ Featured: CyberGuardian XDR
+### 🌍 Featured: [GeoThermX](https://github.com/kunalsrivastava9354/GeoThermX)
 
-A network intrusion detection system. It sniffs live traffic with **Scapy**, extracts features, and classifies every packet with **Random Forest** and **XGBoost** models, so threats are flagged as ALERT and the rest are allowed through.
+An AI-powered **urban heat island** intelligence and mitigation platform, built with my team for the **Bharatiya Antariksh Hackathon 2026 (BAH 2026)**. It turns satellite-derived data (LST, NDVI, NDBI, albedo, humidity and more) into a **Random Forest** model that predicts land surface temperature, detects heat hotspots, simulates cooling fixes like tree plantation and cool roofs, and generates climate insights with **Gemini AI**, all on an interactive GIS dashboard. My part: AI/ML development, backend engineering and geospatial analytics.
 
-<img src="assets/ids-scan.svg" width="100%" alt="Packets flowing through the CyberGuardian XDR pipeline"/>
+<img src="assets/geothermx.svg" width="100%" alt="GeoThermX: hotspots detected, cooling simulated, AI pipeline to dashboard"/>
 
 | Project | What it does | Stack |
 |---|---|---|
-| 🛡️ **CyberGuardian XDR** | ML-based network intrusion detection | Python, Scapy, Random Forest, XGBoost |
+| 🌍 **[GeoThermX](https://github.com/kunalsrivastava9354/GeoThermX)** | Urban heat island detection and cooling simulation (BAH 2026) | Python, FastAPI, scikit-learn, React, Leaflet, Gemini API |
 | 🧰 **Cyber Security Toolkit** | Desktop toolkit of security utilities | Python, C, Tkinter |
 | 📊 **FUTURE_DS_01 – 03** | Data science internship projects | Python |
-| 💰 **Fin-AI** · 🌋 **GeoThermX** | Side experiments | Python |
+| 💰 **Fin-AI** | Side experiment | Python |
 
 ### ⚡ Skill stream
 
@@ -55,4 +55,13 @@ A network intrusion detection system. It sniffs live traffic with **Scapy**, ext
 
 I'm currently sharpening my frontend skills (JavaScript / TypeScript, performance, accessibility, design systems) and open to web engineering opportunities. If you want to talk security, Python or the web, drop me a line at **srivastavakunal9354@gmail.com**.
 
-<img src="assets/footer.svg" width="100%" alt="Footer"/>
+<img src="assets/connect.svg" width="100%" alt="Let's connect: LinkedIn, GitHub, LeetCode and Email"/>
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/kunal-srivastava9354"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/kunalsrivastava9354"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+<a href="https://leetcode.com/u/tonystark_416"><img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
+<a href="mailto:srivastavakunal9354@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+
+</div>
